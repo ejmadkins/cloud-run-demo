@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    target = os.environ.get('TARGET', 'v2')
+    target = os.environ.get('TARGET', 'v1')
     return 'Service: {}\n'.format(target)
 
 if __name__ == "__main__":
